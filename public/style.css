@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.page {
+    display: none;
+    height: 100vh;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+
+}
+
+#loginPage {
+    display: flex;
+}
+
+#loginNameInput {
+    border: 2px solid #000;
+    background-color: #ccc;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+#chatPage {
+    display: none;
+}
+
+.chatArea {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+}
+
+.chatList {
+    width: 800px;
+    background-color:#ccc;
+    overflow-y: scroll;
+    max-height: calc(100vh - 40px);
+}
+
+.userList {
+    flex: 1;
+    background-color:rgb(223, 218, 228);
+    overflow-y: scroll;
+    max-height: calc(100vh - 40px);
+}
+
+.userList li {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.chatList li {
+    color: #333;
+    font-style: italic;
+}
+
+.chatList li.m-status {
+    font-weight: bold;
+    color: blue;
+}
+
+.chatList li.m-txt span {
+    padding: 3px;
+    font-size: 15px;
+}
+
+.chatList li.m-txt span.me {
+    color: brown;
+}
+
+.chatInput {
+    width: 100%;
+    display: flex;
+}
+
+#chatTextInput {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-color: rgb(223, 218, 228);
+    outline: 0;
+    border: 0;
+    width: 100%; /* Adicione esta linha */
+    box-sizing: border-box; /* Esta propriedade garante que o padding e a borda não aumentem a largura do elemento */
+}
+
